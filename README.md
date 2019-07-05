@@ -4,9 +4,10 @@ An example image that was downloaded as a free background is included as a sampl
 
 # How to install?
 
-Create a new folder in "Fantasy Grounds/Data/extensions" to hold the files.
-Download all the files from the GitHub page for the project and place them inside.
-When you start your campaign, select the 'FG Core RPG - Background Changer' extension.
+1) Create a new folder in "Fantasy Grounds/Data/extensions" to hold the files.
+2) Download all the files from the GitHub page for the project and place them inside.
+3) When you start your campaign, select the 'FG Core RPG - Background Changer' extension.
+Hint: Duplicate the folder and rename the extension name in "extension.xml" to something else for each of your campaigns. That way you can have different backgrounds for all your games.
 
 # Why did I choose not to add the files into an .ext file?
 
@@ -23,7 +24,7 @@ You can manually crop the image down to those pixels, or you can open up the inc
 1) Open the "graphics/graphics_frames.xml" file.
 2) Inside edit the name of the bitmmap file to whatever you want. Change the filename to the new image you want.
 3) Reload the campaign, or type in "/reload" in the FG chat as the GM and press enter. This will reload your campaign with the new image.
-ps. I've found it convenient to name images from 1 and upwards as I add new backgrounds to reflect what the group is up to or where they're at.
+Hint: I've found it convenient to name images from 1 and upwards as I add new backgrounds to reflect what the group is up to or where they're at.
 
 	<!-- Desktop background -->
 	<framedef name="desktop">
