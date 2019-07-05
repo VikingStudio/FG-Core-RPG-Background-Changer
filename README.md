@@ -2,6 +2,15 @@
 A Fantasy Grounds extension that allows you to easily change the whole background of the application by changing a filename in the code.
 An example image that was downloaded as a free background is included as a sample, called 1.jpg.
 
+# How to install?
+
+Create a new folder in "Fantasy Grounds/Data/extensions" to hold the files.
+Download all the files from the GitHub page for the project and place them inside.
+When you start your campaign, select the 'FG Core RPG - Background Changer' extension.
+
+# Why did I choose not to add the files into an .ext file?
+
+Because the extension is made to be updated by yourself frequently as your campaign moves along. So it is easier to work with the files outside a compressed file.
 
 # How to add a new background image?
 
