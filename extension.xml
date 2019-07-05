@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root version="3.3" release="1">
+	<properties>
+		<name>FG Core RPG - Background Changer</name>
+		<version>3</version>
+		
+		<author>Styrmir</author>
+		<description>Change your campaigns full screen background image.</description>
+				
+	</properties>
+
+	<base>
+		<includefile source="/graphics/graphics_frames.xml" />
+	</base>
+</root>

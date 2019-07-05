@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root>
+
+	<!-- 
+		To change background find any large background image you like online and put it in the extensions "backgrounds" folder, 
+		and edit the <bitmap file="graphics/backgrounds/8.jpg" /> file name at the end to fit.
+		Type '/reload' inside your chat box in game to try out changes in-game. 
+
+		Important: Background images should be 2048 pixels wide, 1080 pixels high.
+		Otherwise they will not fit properly.
+
+		You can load any other theme before this one to set the general apperance of your campaign. All this extension does is to remove the 
+		background behind the shortcuts on the right and load a new full screen background image to appear behind everything.		
+	-->
+
+	<!--
+		## Fantasy Grounds FRAMEDEF DEFINITION ##
+		framedef
+		This definition is used to define a bitmap frame resource. Bitmap frames are used as background elements for windows, controls and widgets.
+
+		Frames are built from blocks that comprise the corners, edges and center of the frame. The corner pieces are always drawn once, at each corner. 
+		The left, right, top and bottom edges are formed by repeating the corresponding edge piece as many times as needed to complete the frame at the specified size. 
+		The center piece is tiled, i.e. repeated both vertically and horizontally, to fill the remaining gap in the middle.
+
+		Definition:
+
+		<framedef name="..." > 	
+		<bitmap > ... </bitmap> 	The file name of an image file containing the bitmap data from which the frame is built
+		<offset > ... </offset> 	A comma separated list of four numbers specifying the left, top, right and bottom offsets to define the nine components of the frame.
+		<topleft > ... </topleft> 	The coordinates of the top left component, in the form: x,y,width,height
+		<top > ... </top> 	The coordinates of the top component
+		<topright > ... </topright> 	The coordinates of the top right component
+		<left > ... </left> 	The coordinates of the left component
+		<middle > ... </middle> 	The coordinates of the middle component
+		<right > ... </right> 	The coordinates of the right component
+		<bottomleft > ... </bottomleft> 	The coordinates of the bottom left component
+		<bottom > ... </bottom> 	The coordinates of the bottom component
+		<bottomright > ... </bottomright> 	The coordinates of the bottom right component
+		<decal > ... </decal> 	The coordinates of the decal component
+		<insideoffset > ... </insideoffset> 	A comma separated list of four numbers specifying the left, top, right and bottom offsets applied when displaying the window resize arrows. If not specified, zero will be used for each offset.
+		</framedef> 		
+	-->
+	
+
+	<!-- Desktop background -->
+	<framedef name="desktop">
+		<bitmap file="graphics/backgrounds/1.jpg" />
+		<right rect="0,0,0,0" />		
+		<middle rect="0,0,2048,1080" />
+	</framedef>
+	<framedef name="shortcuts">
+		<bitmap file="graphics/backgrounds/1px-black.jpg" />
+		<!-- <bitmap file="graphics/backgrounds/1px-transparent.png" /> -->
+		<topleft rect="500,0,15,15" />
+		<left rect="500,15,15,500" />
+		<middle rect="515,0,50,100" />
+		<topright rect="500,0,11,15" />
+		<right rect="500,15,11,500" />
+	</framedef>
+
+</root>
